@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -6,32 +7,55 @@ using UnityEngine.Diagnostics;
 public class FoVPlayerLose : MonoBehaviour
 {
     [SerializeField] string PlayerTag;
+    [SerializeField] LayerMask layer;
+    MeshFilter filter;
     PolygonCollider2D polyCollider;
+    private Mesh myMesh;
+    private bool doOnce = false;
+
     private void Start()
     {
-        Mesh mesh = new Mesh();
+        myMesh = new Mesh();
 
-        GetComponent<MeshFilter>().mesh = mesh;
+        filter = GetComponent<MeshFilter>();
+        filter.mesh = myMesh;
         polyCollider = GetComponent<PolygonCollider2D>();
-
+        doOnce = false;
+    }
+    private void Update()
+    {
         float fov = 90f;
         Vector3 origin = Vector3.zero;
         int rayCount = 25;
         float angle = 0f;
-        float angleIncrease = fov / rayCount;
         float viewDist = 5f;
+        float angleIncrease = fov / rayCount;
 
-
-        Vector3[] vertices = new Vector3[rayCount+1+1];
+        Vector3[] vertices = new Vector3[rayCount + 1 + 1];
         Vector2[] uv = new Vector2[vertices.Length];
-        int[] triangles = new int[rayCount*3];
+        int[] triangles = new int[rayCount * 3];
 
         int vertexIndex = 1;
         int triangleIndex = 0;
         for (int i = 0; i <= rayCount; i++)
         {
+            Vector3 vertex;
             Vector3 angleVertex = GetVectorFromAngle(angle);
-            Vector3 vertex = origin + (angleVertex * viewDist);
+            RaycastHit2D hit = Physics2D.Raycast(origin, angleVertex, viewDist);
+            if (hit.collider == null)
+            {
+                vertex = origin + (angleVertex * viewDist);
+            }
+            else if (hit.collider.tag == PlayerTag)
+            {
+                GameOverPlayer();
+                vertex = hit.point;
+            }
+            else
+            {
+                vertex = hit.point;
+            }
+
             vertices[vertexIndex] = vertex;
 
             if (i > 0)
@@ -47,32 +71,22 @@ public class FoVPlayerLose : MonoBehaviour
             angle -= angleIncrease;
         }
 
-        mesh.vertices = vertices;
-        mesh.uv = uv;
-        mesh.triangles = triangles;
+        myMesh.vertices = vertices;
+        myMesh.uv = uv;
+        myMesh.triangles = triangles;
 
-        mesh.RecalculateBounds();
-
-        Vector2[] v2 = new Vector2[vertices.Length];
-        for(int i = 0; i < vertices.Length; i++)
+        myMesh.RecalculateBounds();
+    }
+    private void GameOverPlayer()
+    {
+        if(!doOnce)
         {
-            Vector3 v3 = vertices[i];
-            v2[i] = new Vector2(v3.x, v3.y);
+            Debug.Log("Player Spotted, Game Over");
         }
-        polyCollider.SetPath(0, v2);
     }
     private Vector3 GetVectorFromAngle(float angle)
     {
         float angleRad = angle * (Mathf.PI / 180f);
         return new Vector3(Mathf.Cos(angleRad), Mathf.Sin(angleRad));
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == PlayerTag)
-        {
-            Debug.Log("Game Has Lost, Reset Map");
-            //Game Lose Play animation? Reset
-        }
     }
 }
