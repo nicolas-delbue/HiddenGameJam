@@ -1,92 +1,88 @@
+using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Diagnostics;
+using UnityEngine.SceneManagement;
 
 public class FoVPlayerLose : MonoBehaviour
 {
-    [SerializeField] string PlayerTag;
-    [SerializeField] LayerMask layer;
-    MeshFilter filter;
-    PolygonCollider2D polyCollider;
-    private Mesh myMesh;
+    public string PlayerTag;
     private bool doOnce = false;
 
-    private void Start()
-    {
-        myMesh = new Mesh();
+    public Material VisionConeMaterial;
+    public float VisionRange;
+    public float VisionAngle;
+    public LayerMask VisionObstructingLayer;//layer with objects that obstruct the enemy view, like walls, for example
+    public LayerMask PlayerLayer;
+    public int VisionConeResolution = 120;//the vision cone will be made up of triangles, the higher this value is the pretier the vision cone will be
+    Mesh VisionConeMesh;
+    MeshFilter MeshFilter_;
 
-        filter = GetComponent<MeshFilter>();
-        filter.mesh = myMesh;
-        polyCollider = GetComponent<PolygonCollider2D>();
-        doOnce = false;
+    void Start()
+    {
+        transform.AddComponent<MeshRenderer>().material = VisionConeMaterial;
+        MeshFilter_ = transform.AddComponent<MeshFilter>();
+        VisionConeMesh = new Mesh();
+        VisionAngle *= Mathf.Deg2Rad;
     }
-    private void Update()
+    void Update()
     {
-        float fov = 90f;
-        Vector3 origin = Vector3.zero;
-        int rayCount = 25;
-        float angle = 0f;
-        float viewDist = 5f;
-        float angleIncrease = fov / rayCount;
+        DrawVisionCone();//calling the vision cone function everyframe just so the cone is updated every frame
+    }
 
-        Vector3[] vertices = new Vector3[rayCount + 1 + 1];
-        Vector2[] uv = new Vector2[vertices.Length];
-        int[] triangles = new int[rayCount * 3];
+    void DrawVisionCone()//this method creates the vision cone mesh
+    {
+        int[] triangles = new int[(VisionConeResolution - 1) * 3];
+        Vector3[] Vertices = new Vector3[VisionConeResolution + 1];
+        Vertices[0] = Vector3.zero;
+        float Currentangle = -VisionAngle / 2;
+        float angleIcrement = VisionAngle / (VisionConeResolution - 1);
+        float Sine;
+        float Cosine;
 
-        int vertexIndex = 1;
-        int triangleIndex = 0;
-        for (int i = 0; i <= rayCount; i++)
+        for (int i = 0; i < VisionConeResolution; i++)
         {
-            Vector3 vertex;
-            Vector3 angleVertex = GetVectorFromAngle(angle);
-            RaycastHit2D hit = Physics2D.Raycast(origin, angleVertex, viewDist);
-            if (hit.collider == null)
+            Sine = Mathf.Sin(Currentangle);
+            Cosine = Mathf.Cos(Currentangle);
+            Vector3 RaycastDirection = (transform.up * Cosine) + (transform.right * Sine);
+            Vector3 VertForward = (Vector3.up * Cosine) + (Vector3.right * Sine);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, RaycastDirection, VisionRange, VisionObstructingLayer);
+            if (hit)
             {
-                vertex = origin + (angleVertex * viewDist);
-            }
-            else if (hit.collider.tag == PlayerTag)
-            {
-                GameOverPlayer();
-                vertex = hit.point;
+                Vertices[i + 1] = VertForward * hit.distance;
             }
             else
             {
-                vertex = hit.point;
+                Vertices[i + 1] = VertForward * VisionRange;
             }
-
-            vertices[vertexIndex] = vertex;
-
-            if (i > 0)
+            RaycastHit2D hit2 = Physics2D.Raycast(transform.position, RaycastDirection, VisionRange, PlayerLayer);
+            if(hit2)
             {
-                triangles[triangleIndex + 0] = 0;
-                triangles[triangleIndex + 1] = vertexIndex - 1;
-                triangles[triangleIndex + 2] = vertexIndex;
-
-                triangleIndex += 3;
+                GameOverPlayer();
             }
 
-            vertexIndex++;
-            angle -= angleIncrease;
+
+            Currentangle += angleIcrement;
         }
-
-        myMesh.vertices = vertices;
-        myMesh.uv = uv;
-        myMesh.triangles = triangles;
-
-        myMesh.RecalculateBounds();
+        for (int i = 0, j = 0; i < triangles.Length; i += 3, j++)
+        {
+            triangles[i] = 0;
+            triangles[i + 1] = j + 1;
+            triangles[i + 2] = j + 2;
+        }
+        VisionConeMesh.Clear();
+        VisionConeMesh.vertices = Vertices;
+        VisionConeMesh.triangles = triangles;
+        MeshFilter_.mesh = VisionConeMesh;
     }
+
     private void GameOverPlayer()
     {
         if(!doOnce)
         {
-            Debug.Log("Player Spotted, Game Over");
+            doOnce = true;
+            //Change so it sends event to a game manager
+            Debug.Log("Game ends");
         }
-    }
-    private Vector3 GetVectorFromAngle(float angle)
-    {
-        float angleRad = angle * (Mathf.PI / 180f);
-        return new Vector3(Mathf.Cos(angleRad), Mathf.Sin(angleRad));
     }
 }

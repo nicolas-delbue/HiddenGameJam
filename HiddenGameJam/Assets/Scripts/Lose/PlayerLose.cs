@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerLose : MonoBehaviour
 {
@@ -7,8 +8,8 @@ public class PlayerLose : MonoBehaviour
     {
         if (collision.tag == PlayerTag)
         {
-            Debug.Log("Game Has Lost, Reset Map");
-            //Game Lose Play animation? Reset
+            //Change so it sends event to a game manager
+            Debug.Log("Game ends");
         }
     }
 }
