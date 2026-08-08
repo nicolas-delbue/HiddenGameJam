@@ -11,7 +11,7 @@ public class FoVPlayerLose : MonoBehaviour
 
         float fov = 90f;
         Vector3 origin = Vector3.zero;
-        int rayCount = 2;
+        int rayCount = 25;
         float angle = 0f;
         float angleIncrease = fov / rayCount;
         float viewDist = 5f;
