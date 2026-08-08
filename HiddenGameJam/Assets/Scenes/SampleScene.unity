@@ -928,6 +928,7 @@ GameObject:
   - component: {fileID: 1564580316}
   - component: {fileID: 1564580315}
   - component: {fileID: 1564580314}
+  - component: {fileID: 1564580318}
   m_Layer: 0
   m_Name: FOV Spotting Area
   m_TagString: Untagged
@@ -960,7 +961,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 60618619e89dd954c8e0bb9195545d57, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1004,6 +1005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eceb68238d553b64490019a7b6253d8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoVPlayerLose
+  PlayerTag: Player
 --- !u!4 &1564580317
 Transform:
   m_ObjectHideFlags: 0
@@ -1013,12 +1015,34 @@ Transform:
   m_GameObject: {fileID: 1564580313}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &1564580318
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564580313}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &1641874332 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7776669914184381010, guid: 351d471aac668ad4581e8dc646369a28, type: 3}
