@@ -9,7 +9,7 @@ public class PlayerLose : MonoBehaviour
         if (collision.tag == PlayerTag)
         {
             //Change so it sends event to a game manager
-            Debug.Log("Game ends");
+            CEventSystem.current.Lose(true);
         }
     }
 }

@@ -28,6 +28,7 @@ public class CEventSystem : MonoBehaviour
             onInteractionInteracting(time);
         }
     }
+    //Pause
     public event Action<bool> onPauseInputs;
     public void PauseInputs(bool toggle)
     {
@@ -36,4 +37,30 @@ public class CEventSystem : MonoBehaviour
             onPauseInputs(toggle);
         }
     }
+    //Canvas Events
+    public event Action<bool> onWin;
+    public void Win(bool toggle)
+    {
+        if (onWin != null)
+        {
+            onWin(toggle);
+        }
+    }
+    public event Action<bool> onLose;
+    public void Lose(bool toggle)
+    {
+        if (onLose != null)
+        {
+            onLose(toggle);
+        }
+    }
+    public event Action<bool> onPause;
+    public void Pause(bool toggle)
+    {
+        if (onPause != null)
+        {
+            onPause(toggle);
+        }
+    }
+
 }
