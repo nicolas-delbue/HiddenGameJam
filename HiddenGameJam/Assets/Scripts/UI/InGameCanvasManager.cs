@@ -11,15 +11,15 @@ public class InGameCanvasManager : MonoBehaviour
         losePanel.SetActive(false);
         pausePanel.SetActive(false);
 
-        //Subscribe to events
-        CEventSystem.current.onWin += WinPanel;
-        CEventSystem.current.onLose += LosePanel;
+        //Change on Win to onOpenWinPanel, so onWin can go to GameManager
+        CEventSystem.current.onOpenWin += WinPanel;
+        CEventSystem.current.onOpenLose += LosePanel;
         CEventSystem.current.onPause += PauseMenu;
     }
     private void OnDestroy()
     {
-        CEventSystem.current.onWin -= WinPanel;
-        CEventSystem.current.onLose -= LosePanel;
+        CEventSystem.current.onOpenWin -= WinPanel;
+        CEventSystem.current.onOpenLose -= LosePanel;
         CEventSystem.current.onPause -= PauseMenu;
     }
     //Win Menu Functions
@@ -27,12 +27,14 @@ public class InGameCanvasManager : MonoBehaviour
     {
         winPanel.SetActive(toggle);
         CEventSystem.current.PauseInputs(toggle);
+        CEventSystem.current.CanPause(!toggle);
     }
     //Lose Menu Functions
     private void LosePanel(bool toggle)
     {
         losePanel.SetActive(toggle);
         CEventSystem.current.PauseInputs(toggle);
+        CEventSystem.current.CanPause(!toggle);
     }
     //Pause Menu Functions
     private void PauseMenu(bool toggle)

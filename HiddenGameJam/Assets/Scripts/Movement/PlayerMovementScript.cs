@@ -40,5 +40,6 @@ public class PlayerMovementScript : MonoBehaviour
     private void PauseGame(bool toggle)
     {
         isPaused = toggle;
+        rb2d.linearVelocity = Vector2.zero;
     }
 }

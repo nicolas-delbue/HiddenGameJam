@@ -37,6 +37,14 @@ public class CEventSystem : MonoBehaviour
             onPauseInputs(toggle);
         }
     }
+    public event Action<bool> onCanPause;
+    public void CanPause(bool toggle)
+    {
+        if(onCanPause != null)
+        {
+            onCanPause(toggle);
+        }
+    }
     //Canvas Events
     public event Action<bool> onWin;
     public void Win(bool toggle)
@@ -52,6 +60,22 @@ public class CEventSystem : MonoBehaviour
         if (onLose != null)
         {
             onLose(toggle);
+        }
+    }
+    public event Action<bool> onOpenWin;
+    public void OpenWin(bool toggle)
+    {
+        if (onOpenWin != null)
+        {
+            onOpenWin(toggle);
+        }
+    }
+    public event Action<bool> onOpenLose;
+    public void OpenLose(bool toggle)
+    {
+        if (onOpenLose != null)
+        {
+            onOpenLose(toggle);
         }
     }
     public event Action<bool> onPause;
