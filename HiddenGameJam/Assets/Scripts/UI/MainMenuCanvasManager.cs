@@ -5,7 +5,6 @@ public class MainMenuCanvasManager : MonoBehaviour
 {
     [SerializeField] private GameObject MainMenuPanel;
     [SerializeField] private GameObject LevelSelectPanel;
-    [SerializeField] private GameObject ControlsPanel;
     [SerializeField] private GameObject SettingsPanel;
     [SerializeField] private GameObject CreditsPanel;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -13,7 +12,6 @@ public class MainMenuCanvasManager : MonoBehaviour
     {
         MainMenuPanel.SetActive(true);
         LevelSelectPanel.SetActive(false);
-        ControlsPanel.SetActive(false);
         SettingsPanel.SetActive(false);
         CreditsPanel.SetActive(false);
     }
@@ -27,7 +25,6 @@ public class MainMenuCanvasManager : MonoBehaviour
     {
         MainMenuPanel.SetActive(false);
         LevelSelectPanel.SetActive(false);
-        ControlsPanel.SetActive(false);
         SettingsPanel.SetActive(false);
         CreditsPanel.SetActive(false);
     }
