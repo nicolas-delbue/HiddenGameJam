@@ -25,16 +25,22 @@ public class InGameCanvasManager : MonoBehaviour
     //Win Menu Functions
     private void WinPanel(bool toggle)
     {
-        winPanel.SetActive(toggle);
-        CEventSystem.current.PauseInputs(toggle);
-        CEventSystem.current.CanPause(!toggle);
+        if(!losePanel.activeSelf)
+        {
+            winPanel.SetActive(toggle);
+            CEventSystem.current.PauseInputs(toggle);
+            CEventSystem.current.CanPause(!toggle);
+        }
     }
     //Lose Menu Functions
     private void LosePanel(bool toggle)
     {
-        losePanel.SetActive(toggle);
-        CEventSystem.current.PauseInputs(toggle);
-        CEventSystem.current.CanPause(!toggle);
+        if(!winPanel.activeSelf)
+        {
+            losePanel.SetActive(toggle);
+            CEventSystem.current.PauseInputs(toggle);
+            CEventSystem.current.CanPause(!toggle);
+        }
     }
     //Pause Menu Functions
     private void PauseMenu(bool toggle)
@@ -42,6 +48,4 @@ public class InGameCanvasManager : MonoBehaviour
         pausePanel.SetActive(toggle);
         CEventSystem.current.PauseInputs(toggle);
     }
-    //Shared Functions
-
 }
