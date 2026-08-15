@@ -47,19 +47,21 @@ public class FoVPlayerLose : MonoBehaviour
             Vector3 RaycastDirection = (transform.up * Cosine) + (transform.right * Sine);
             Vector3 VertForward = (Vector3.up * Cosine) + (Vector3.right * Sine);
             RaycastHit2D hit = Physics2D.Raycast(transform.position, RaycastDirection, VisionRange, VisionObstructingLayer);
+            RaycastHit2D hit2 = Physics2D.Raycast(transform.position, RaycastDirection, VisionRange, PlayerLayer);
             if (hit)
             {
                 Vertices[i + 1] = VertForward * hit.distance;
+            }
+            else if (hit2)
+            {
+                GameOverPlayer();
             }
             else
             {
                 Vertices[i + 1] = VertForward * VisionRange;
             }
-            RaycastHit2D hit2 = Physics2D.Raycast(transform.position, RaycastDirection, VisionRange, PlayerLayer);
-            if(hit2)
-            {
-                GameOverPlayer();
-            }
+            
+            
 
 
             Currentangle += angleIcrement;
