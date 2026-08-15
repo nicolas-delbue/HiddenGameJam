@@ -1,0 +1,951 @@
+fileFormatVersion: 2
+guid: f4189c34cf5dbae46a69b28f5edaea53
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4024408096343197589
+    second: AespriteTileMapFloor_0
+  - first:
+      213: -4942502885077711440
+    second: AespriteTileMapFloor_1
+  - first:
+      213: -9122499365644648299
+    second: AespriteTileMapFloor_2
+  - first:
+      213: 1638304477982210022
+    second: AespriteTileMapFloor_3
+  - first:
+      213: 4969950425328019590
+    second: AespriteTileMapFloor_4
+  - first:
+      213: 1058809425726950819
+    second: AespriteTileMapFloor_5
+  - first:
+      213: 420055220581954671
+    second: AespriteTileMapFloor_6
+  - first:
+      213: -7074301670492241189
+    second: AespriteTileMapFloor_7
+  - first:
+      213: -5165113564685174056
+    second: AespriteTileMapFloor_8
+  - first:
+      213: 4401151160483785551
+    second: AespriteTileMapFloor_9
+  - first:
+      213: -4584002482760309799
+    second: AespriteTileMapFloor_10
+  - first:
+      213: 1026236778894252409
+    second: AespriteTileMapFloor_11
+  - first:
+      213: -5046717651663267814
+    second: AespriteTileMapFloor_12
+  - first:
+      213: 3384141759359184323
+    second: AespriteTileMapFloor_13
+  - first:
+      213: 8985527293739833923
+    second: AespriteTileMapFloor_14
+  - first:
+      213: 756005432074620967
+    second: AespriteTileMapFloor_15
+  - first:
+      213: -1722833461555724118
+    second: AespriteTileMapFloor_16
+  - first:
+      213: -184672106946426327
+    second: AespriteTileMapFloor_17
+  - first:
+      213: -3274650131181081559
+    second: AespriteTileMapFloor_18
+  - first:
+      213: 3197907765488229445
+    second: AespriteTileMapFloor_19
+  - first:
+      213: -819079039745707481
+    second: AespriteTileMapFloor_20
+  - first:
+      213: 8666339831700052700
+    second: AespriteTileMapFloor_21
+  - first:
+      213: 3285228581373326974
+    second: AespriteTileMapFloor_22
+  - first:
+      213: -6644753022063038028
+    second: AespriteTileMapFloor_23
+  - first:
+      213: -5500218154476811590
+    second: AespriteTileMapFloor_24
+  - first:
+      213: 5861976480231016312
+    second: AespriteTileMapFloor_25
+  - first:
+      213: 2101948405805997369
+    second: AespriteTileMapFloor_26
+  - first:
+      213: 2535860911342034437
+    second: AespriteTileMapFloor_27
+  - first:
+      213: -4248740940452768359
+    second: AespriteTileMapFloor_28
+  - first:
+      213: 6181222167879495884
+    second: AespriteTileMapFloor_29
+  - first:
+      213: 8452239798219762800
+    second: AespriteTileMapFloor_30
+  - first:
+      213: -4773267846336192802
+    second: AespriteTileMapFloor_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 172
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b68f14a982e6628c0800000000000000
+      internalID: -4024408096343197589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 172
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b5899100d3b86bb0800000000000000
+      internalID: -4942502885077711440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_2
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 172
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5904607f82f566180800000000000000
+      internalID: -9122499365644648299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_3
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 172
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7bf0c1e3d6cb610800000000000000
+      internalID: 1638304477982210022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_4
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 172
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6886af4749fc8f440800000000000000
+      internalID: 4969950425328019590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 138
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ad4a491095a1be00800000000000000
+      internalID: 1058809425726950819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 138
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f64f5d06ff554d500800000000000000
+      internalID: 420055220581954671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_7
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 138
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd28b58ac1803dd90800000000000000
+      internalID: -7074301670492241189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_8
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 138
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8da73603494d158b0800000000000000
+      internalID: -5165113564685174056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_9
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 138
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4b2f6389a7041d30800000000000000
+      internalID: 4401151160483785551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_10
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 138
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d3209d670a5260c0800000000000000
+      internalID: -4584002482760309799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 979de65c9eced3e00800000000000000
+      internalID: 1026236778894252409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_12
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18dae2d80576f9b0800000000000000
+      internalID: -5046717651663267814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_13
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cd6b2c0003e6fe20800000000000000
+      internalID: 3384141759359184323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_14
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34a90fe577103bc70800000000000000
+      internalID: 8985527293739833923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_15
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 720d21b5feedd7a00800000000000000
+      internalID: 756005432074620967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_16
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa080dc38144718e0800000000000000
+      internalID: -1722833461555724118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_17
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 70
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a098972b9ef6df0800000000000000
+      internalID: -184672106946426327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_18
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 70
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ce3473e0b1e82d0800000000000000
+      internalID: -3274650131181081559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_19
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 70
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c93626b20416c20800000000000000
+      internalID: 3197907765488229445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_20
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 70
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7223df8f3fb02a4f0800000000000000
+      internalID: -819079039745707481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_21
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 70
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdadc432926054870800000000000000
+      internalID: 8666339831700052700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_22
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 70
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e76b7b62df9779d20800000000000000
+      internalID: 3285228581373326974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_23
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b1bab3f45819c3a0800000000000000
+      internalID: -6644753022063038028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_24
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aba414bdabc4ba3b0800000000000000
+      internalID: -5500218154476811590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_25
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8774dd9fc8ce95150800000000000000
+      internalID: 5861976480231016312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_26
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93dd34040fe9b2d10800000000000000
+      internalID: 2101948405805997369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_27
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50e17543010313320800000000000000
+      internalID: 2535860911342034437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_28
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99557ad10a07905c0800000000000000
+      internalID: -4248740940452768359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_29
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc03a3aefcc18c550800000000000000
+      internalID: 6181222167879495884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_30
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 2
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07cee4980536c4570800000000000000
+      internalID: 8452239798219762800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AespriteTileMapFloor_31
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 2
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede56510f22f1cdb0800000000000000
+      internalID: -4773267846336192802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9eeb27a14cb5dbc4fbafc8f7bb860148
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":2.0,"y":2.0},"gridSpritePadding":{"x":2.0,"y":2.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      AespriteTileMapFloor_0: -4024408096343197589
+      AespriteTileMapFloor_1: -4942502885077711440
+      AespriteTileMapFloor_10: -4584002482760309799
+      AespriteTileMapFloor_11: 1026236778894252409
+      AespriteTileMapFloor_12: -5046717651663267814
+      AespriteTileMapFloor_13: 3384141759359184323
+      AespriteTileMapFloor_14: 8985527293739833923
+      AespriteTileMapFloor_15: 756005432074620967
+      AespriteTileMapFloor_16: -1722833461555724118
+      AespriteTileMapFloor_17: -184672106946426327
+      AespriteTileMapFloor_18: -3274650131181081559
+      AespriteTileMapFloor_19: 3197907765488229445
+      AespriteTileMapFloor_2: -9122499365644648299
+      AespriteTileMapFloor_20: -819079039745707481
+      AespriteTileMapFloor_21: 8666339831700052700
+      AespriteTileMapFloor_22: 3285228581373326974
+      AespriteTileMapFloor_23: -6644753022063038028
+      AespriteTileMapFloor_24: -5500218154476811590
+      AespriteTileMapFloor_25: 5861976480231016312
+      AespriteTileMapFloor_26: 2101948405805997369
+      AespriteTileMapFloor_27: 2535860911342034437
+      AespriteTileMapFloor_28: -4248740940452768359
+      AespriteTileMapFloor_29: 6181222167879495884
+      AespriteTileMapFloor_3: 1638304477982210022
+      AespriteTileMapFloor_30: 8452239798219762800
+      AespriteTileMapFloor_31: -4773267846336192802
+      AespriteTileMapFloor_4: 4969950425328019590
+      AespriteTileMapFloor_5: 1058809425726950819
+      AespriteTileMapFloor_6: 420055220581954671
+      AespriteTileMapFloor_7: -7074301670492241189
+      AespriteTileMapFloor_8: -5165113564685174056
+      AespriteTileMapFloor_9: 4401151160483785551
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
