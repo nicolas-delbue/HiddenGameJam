@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoVPlayerLose
   PlayerTag: Player
+  loseSFX: {fileID: 8300000, guid: af21ae6dce0aa0148b27321e5ac3958a, type: 3}
   VisionConeMaterial: {fileID: 2100000, guid: 60618619e89dd954c8e0bb9195545d57, type: 2}
   VisionRange: 7
   VisionAngle: 80

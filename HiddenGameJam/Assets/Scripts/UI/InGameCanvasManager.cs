@@ -25,6 +25,7 @@ public class InGameCanvasManager : MonoBehaviour
     //Win Menu Functions
     private void WinPanel(bool toggle)
     {
+        AudioHandler.instance.WinMusic();
         if(!losePanel.activeSelf)
         {
             winPanel.SetActive(toggle);
@@ -35,6 +36,7 @@ public class InGameCanvasManager : MonoBehaviour
     //Lose Menu Functions
     private void LosePanel(bool toggle)
     {
+        AudioHandler.instance.LoseMusic();
         if(!winPanel.activeSelf)
         {
             losePanel.SetActive(toggle);

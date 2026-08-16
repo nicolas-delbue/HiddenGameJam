@@ -9,6 +9,7 @@ public class FoVPlayerLose : MonoBehaviour
     public string PlayerTag;
     private bool doOnce = false;
 
+    public AudioClip loseSFX;
     public Material VisionConeMaterial;
     public float VisionRange;
     public float VisionAngle;
@@ -83,7 +84,7 @@ public class FoVPlayerLose : MonoBehaviour
         if(!doOnce)
         {
             doOnce = true;
-            //Change so it sends event to a game manager
+            AudioHandler.instance.PlaySoundEffect(loseSFX, transform, 1f);
             CEventSystem.current.Lose(true);
         }
     }

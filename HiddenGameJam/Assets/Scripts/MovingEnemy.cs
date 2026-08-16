@@ -5,6 +5,7 @@ using static UnityEngine.GraphicsBuffer;
 
 public class MovingEnemy : MonoBehaviour
 {
+    public AudioClip stepNoise;
     public Transform[] points;
     public float waitTime;
     public float speed;
@@ -19,6 +20,7 @@ public class MovingEnemy : MonoBehaviour
         direction = false;
         pointNum = 0;
         StartCoroutine(Pathing());
+        //StartCoroutine(StepSound());
     }
 
     private void FixedUpdate()
@@ -73,9 +75,25 @@ public class MovingEnemy : MonoBehaviour
             else
             {
                 transform.position = Vector2.MoveTowards(transform.position, points[pointNum].position, speed * Time.deltaTime);
+                
                 Vector3 dir = points[pointNum].position - transform.position;
                 targetRotation = Quaternion.LookRotation(Vector3.forward, dir);
                 transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotSpeed * Time.deltaTime);
+                yield return null;
+            }
+        }
+    }
+    private IEnumerator StepSound()
+    {
+        while(true)
+        {
+            if (transform.position != points[pointNum].position)
+            {
+                yield return new WaitForSeconds(.1f);
+                AudioHandler.instance.PlaySoundEffect(stepNoise, transform, .25f);
+            }
+            else
+            {
                 yield return null;
             }
         }

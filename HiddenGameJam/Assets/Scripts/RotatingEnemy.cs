@@ -10,7 +10,6 @@ public class RotatingEnemy : MonoBehaviour
     public int DegreesPerSecond = 30;
     public float WaitSec = 2f;
 
-
     private Rigidbody2D _rb2d;
     private float _currentRotation;
     private int rotationNum;
